@@ -29,7 +29,7 @@ $("#hero-carousel").owlCarousel({
     dots: false,
     loop: true,
     nav: true,
-    autoplay: false,
+    autoplay: true,
     navText: navText,
     autoplayHoverPause: true
 })
@@ -39,18 +39,16 @@ $("#service-slide").owlCarousel({
     dots: false,
     loop: true,
     nav: true,
-    autoplay: false,
+    autoplay: true,
     navText: navText,
     autoplayHoverPause: true,
     margin: 30,
     responsive : {
         320: {
             items: 1,
-            nav:false
         },
         500: {
             items: 2,
-            nav:false
         },
         1024: {
             items: 3

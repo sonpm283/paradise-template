@@ -1087,6 +1087,15 @@ section {
         width: 100%;
     }
 
+    .carousel-nav-center:hover button.owl-prev {
+        left: 0;
+    }
+    
+    .carousel-nav-center:hover button.owl-next {
+        right: 0;
+    }
+
+
     .col-1 {
         width: 8.33%;
     }
@@ -1210,6 +1219,7 @@ section {
     .box-news {
         margin-bottom: 3rem;
     }
+
     .footer-social {
         margin-bottom: 2rem;
     }
