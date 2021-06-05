@@ -39,7 +39,7 @@ $("#service-slide").owlCarousel({
     dots: false,
     loop: true,
     nav: true,
-    autoplay: true,
+    autoplay: false,
     navText: navText,
     autoplayHoverPause: true,
     margin: 30,

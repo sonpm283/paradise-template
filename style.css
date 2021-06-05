@@ -271,7 +271,7 @@ section {
 .hamburger {
     position: relative;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .hamburger,
@@ -950,7 +950,6 @@ section {
     padding: 1.2rem 1.5rem;
 }
 
-
 .nav-mb {
     position: fixed;
     left: 0;
@@ -1073,7 +1072,7 @@ section {
 @media only screen and (max-width: 1280px) {
 
     .hero-slide-item {
-        padding-top: 50%;
+        padding-top: 40%;
     }
 
     .item-content-wraper {
@@ -1141,9 +1140,6 @@ section {
     html {
         font-size: 50%;
     }
-    .container {
-        padding: 0 15px;
-    }
 
     .jc-xs-c {
         justify-content: center;
@@ -1155,7 +1151,6 @@ section {
 
     .hero-slide-item {
         height: max-content;
-        padding-top: unset;
     }
 
     .h-xs {
@@ -1169,13 +1164,12 @@ section {
     .item-content-wraper {
         width: 100%;
         height: 100%;
-        padding-bottom: 20px;
-        padding-right: 5rem;
     }
 
     .hero-slide-item-content {
         position: relative;
         left: 5%;
+        top: -80px;
     }
     .item-action .btn-primary {
         padding: 1rem 2rem;
@@ -1183,14 +1177,17 @@ section {
 
     .item-content-description {
         font-size: 1.2rem;
+        margin: 2.5rem 0;
     }
 
     .hero-slide-item img {
         height: 100%;
+        object-fit: cover;
     }
 
     .item-content-title {
         font-size: 3rem;
+        margin-top: 2.5rem;
     }
 
     .service-txt {
@@ -1218,7 +1215,7 @@ section {
     }
 
     .footer-form {
-        width: 50%;
+        width: 55%;
     }
     .col-1 {
         width: 8.33%;
