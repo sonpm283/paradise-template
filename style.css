@@ -1218,6 +1218,9 @@ section {
         margin-bottom: 2rem;
     }
 
+    .footer-form {
+        width: 50%;
+    }
     .col-1 {
         width: 8.33%;
     }
@@ -1265,7 +1268,6 @@ section {
     .col-xs-12 {
         width: 100%;
     }
-
 
 }
 
