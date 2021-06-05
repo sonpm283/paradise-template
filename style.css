@@ -24,7 +24,6 @@ html {
 }
 
 body {
-    font-size: 1.3rem;
     font-family: var(--font-poppins);
 }
 
@@ -1147,7 +1146,7 @@ section {
 
 @media only screen and (max-width: 850px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     .jc-xs-c {
@@ -1180,12 +1179,13 @@ section {
         left: 5%;
         top: -80px;
     }
+
     .item-action .btn-primary {
         padding: 1rem 2rem;
     }
 
     .item-content-description {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         margin: 2.5rem 0;
     }
 
