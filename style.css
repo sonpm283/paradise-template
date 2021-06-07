@@ -116,6 +116,11 @@ section {
     font-size: 2rem;
 }
 
+.info-item span,
+.time-open {
+    font-size: 13.5px;
+}
+
 .time-open {
     padding-right: 2rem;
     border-right: 1px solid #f1cdfb;
@@ -501,6 +506,7 @@ section {
     text-transform: uppercase;
     color: var(--white-color);
     transition: all .3s ease;
+    font-size: 14px;
 }
 
 .btn-primary:hover {
@@ -663,6 +669,7 @@ section {
     position: absolute;
     left: 3rem;
     top: 50%;
+
     transform: translateY(-50%);
 }
 
@@ -1288,6 +1295,10 @@ section {
 
     .box-spa-img {
         margin-bottom: 3rem;
+    }
+
+    .appointment .box-spa-btn .btn-primary {
+        padding: 10px 37px !important;
     }
 
     .box-news {
