@@ -135,6 +135,11 @@ section {
     background-color: var(--white-color);
 }
 
+.header-main-action i:hover {
+    color: var(--primary-color);
+    transition: all .3s ease-in-out;
+}
+
 .header-main.nav-fixed {
     position: fixed;
     top: 0;
@@ -919,10 +924,11 @@ section {
 }
 
 .footer-social .btn-primary i{
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
     display: grid;
     place-items: center;
+    font-size: 16px;
 }
 
 .footer-social .btn-primary ~ .btn-primary  {
@@ -1275,6 +1281,11 @@ section {
 
     .box-spa-btn {
         text-align: center;
+    }
+
+    .box-spa-btn,
+    .pricing-btn {
+        font-size: 14px;
     }
 
     .box-spa-img {
