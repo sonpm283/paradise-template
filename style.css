@@ -1194,6 +1194,26 @@ section {
         font-size: 55%;
     }
 
+    .header-top-info {
+        display: block;
+    }
+
+    .info-item ~ .info-item {
+        margin-left: 0;
+    }
+
+    .info-item span,
+    .time-open {
+        font-size: 13.5px;
+        letter-spacing: .3px;
+        line-height: 25px;
+    }
+
+    .time-open {
+        border-right: unset;
+        padding-right: 0;
+    }
+
     .jc-xs-c {
         justify-content: center;
     }
