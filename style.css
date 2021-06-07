@@ -678,7 +678,7 @@ section {
 }
 
 .pricing-wrap-inner {
-    padding: 1rem 1.2rem 4.8rem 1.2rem;
+    padding: 10px 12px 48px 12px;
     position: relative;
 }
 
@@ -1306,6 +1306,22 @@ section {
         padding: 10px 37px !important;
     }
 
+    .pricing-wrap {
+        margin-bottom: 30px;
+    }
+
+    .pricing-wrap-inner {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .pricing-wrap-inner::before {
+        border-top-left-radius: 125px;
+        border-top-right-radius: 125px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
     .box-news {
         margin-bottom: 3rem;
     }
@@ -1317,6 +1333,7 @@ section {
     .footer-form {
         width: 55%;
     }
+
     .col-1 {
         width: 8.33%;
     }
