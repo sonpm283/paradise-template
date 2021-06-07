@@ -68,6 +68,10 @@ li {
     width: 100%;
 }
 
+.is-hidden {
+    overflow: hidden;
+}
+
 .flex-c {
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +183,6 @@ section {
     z-index: 99;
 }
 
-
 .sub-menu::before,
 .mega-menu::before {
     position: absolute;
@@ -243,6 +246,7 @@ section {
     font-size: 2rem;
     font-weight: 500;
 }
+
 
 .header-main-inner {
     position: relative;
@@ -1079,6 +1083,8 @@ section {
     padding: 0 15px;
 }
 
+/* grid  */
+
 .col-1 {
     width: 8.33%;
 }
@@ -1152,7 +1158,6 @@ section {
     .carousel-nav-center:hover button.owl-next {
         right: 0;
     }
-
 
     .col-1 {
         width: 8.33%;

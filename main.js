@@ -2,6 +2,8 @@ $(document).ready(function() {
     dropDownMenu.init();
     hamburgerMenu.init();
     navFixed.init();
+    heroCarousel.init();
+    serviceCarousel.init();
 });
 
 // hamburger menu 
@@ -11,13 +13,16 @@ const hamburgerMenu = {
     },
     hamburgerMenu: function() {
         var menuBtn = document.querySelector('.hamburger-menu');
-        var menuMb = document.querySelector('.nav-mb');
+        var menuMb  = document.querySelector('.nav-mb');
         var overlay = document.querySelector('.nav-overlay');
+        var body = document.getElementsByTagName("body")[0];
         overlay.onclick = () => {
             menuMb.classList.toggle('active');
+            body.classList.remove('is-hidden');
         }
         menuBtn.onclick = () => {
             menuMb.classList.toggle('active');
+            body.classList.add('is-hidden');
         }
     }
 }
@@ -61,42 +66,59 @@ const dropDownMenu = {
 };
 
 
-// owl
+// hero carousel
 const navText = ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>" ];
-$("#hero-carousel").owlCarousel({
-    items: 1,
-    dots: false,
-    loop: true,
-    nav: true,
-    autoplay: true,
-    navText: navText,
-    autoplayHoverPause: true
-})
-
-$("#service-slide").owlCarousel({
-    items: 1,
-    dots: false,
-    loop: true,
-    nav: true,
-    autoplay: true,
-    navText: navText,
-    autoplayHoverPause: true,
-    margin: 30,
-    responsive : {
-        320: {
+const heroCarousel = {
+    init : function () {
+        this.heroCarousel();
+    },
+    heroCarousel: function() {
+        $("#hero-carousel").owlCarousel({
             items: 1,
-        },
-        500: {
-            items: 2,
-        },
-        1024: {
-            items: 3
-        },
-        1280: {
-            items: 4
-        },
-        1600: {
-            items: 4
-        }
+            dots: false,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            navText: navText,
+            autoplayHoverPause: true
+        })
     }
-})
+}
+
+// services carousel
+const serviceCarousel = {
+    init : function () {
+        this.serviceCarousel();
+    },
+    serviceCarousel: function() {
+        $("#service-slide").owlCarousel({
+            items: 1,
+            dots: false,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            navText: navText,
+            autoplayHoverPause: true,
+            margin: 30,
+            responsive : {
+                320: {
+                    items: 1,
+                },
+                500: {
+                    items: 2,
+                },
+                1024: {
+                    items: 3
+                },
+                1280: {
+                    items: 4
+                },
+                1600: {
+                    items: 4
+                }
+            }
+        })
+    }
+}
+
+
