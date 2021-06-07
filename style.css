@@ -267,6 +267,10 @@ section {
     margin-right: 2.5rem;
 }
 
+.hamburger-menu {
+    cursor: pointer;
+}
+
 .hamburger {
     position: relative;
     margin-top: 10px;
@@ -966,6 +970,22 @@ section {
     visibility: visible;
 }
 
+.menu-mb {
+    padding: 0 20px;
+}
+
+.icon-sub-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-sub-menu i {
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
 .menu-mb-link {
     display: block;
     padding: 15px;
@@ -974,6 +994,11 @@ section {
     border-top: 1px solid #dfdfdf;
     font-size: 12px;
     font-weight: 400;
+    position: relative;
+}
+
+.mega-link {
+    position: relative;
 }
 
 .menu-mb-link.active {
@@ -987,13 +1012,14 @@ section {
 .nav-mb-wrap {
     position: absolute;
     background-color: var(--white-color);
-    width: 280px;
+    width: 250px;
     left: 0;
     top: 0;
     height: 100%;
     transform: translateX(-100%);
     transition: all .3s linear;
     box-shadow: 0 0 7px rgba(0,0,0,.1);
+    overflow: auto;
 }
 
 .nav-mb.active .nav-overlay {
@@ -1008,6 +1034,25 @@ section {
 
 .mb-logo {
     padding: 5rem 2rem;
+}
+
+.drop-down,
+.mega-list {
+    margin-left: 15px;
+    display: none;
+}
+
+.mega-list {
+    margin-left: 20px;
+}
+
+.drop-down li a {
+    font-size: 12px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    padding: 11px 20px;
+    display: block;
+    border-top: 1px solid #dfdfdf;
 }
 
 .row {
