@@ -915,6 +915,7 @@ section {
 .footer h4 {
     font-size: 1.6rem;
 }
+
 .footer-social {
     margin-top: 1rem;
 }
@@ -1252,7 +1253,8 @@ section {
     }
 
     .item-action .btn-primary {
-        padding: 1rem 2rem;
+       padding: 10px 20px;
+       font-size: 12px;
     }
 
     .item-content-description {
@@ -1277,10 +1279,6 @@ section {
     .box-content-wrap,
     .box-spa-img {
         padding: 0;
-    }
-
-    .box-spa-btn {
-        text-align: center;
     }
 
     .box-spa-btn,
