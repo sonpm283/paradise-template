@@ -21,6 +21,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -373,7 +374,6 @@ section {
     padding: 1.3rem 4rem;
 }
 
-
 .hero-slide .owl-nav button {
     position: absolute;
     top: 50%;
@@ -415,6 +415,30 @@ section {
     right: 2rem;
 }
 
+.back-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.back-top.active {
+    opacity: 1;
+    visibility: visible
+}
+
+.back-top i {
+    font-size: 3rem;
+    color: var(--white-color);
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
 
 .custom-heading {
     margin-bottom: 3.7rem;
@@ -680,15 +704,19 @@ section {
 .pricing-wrap-inner {
     padding: 10px 12px 48px 12px;
     position: relative;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .pricing-wrap-inner::before {
     content: "";
     position: absolute;
-    border-top-left-radius: 12.5rem;
-    border-top-right-radius: 12.5rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 100%;
     height: 100%;
     background: transparent;
@@ -1317,13 +1345,6 @@ section {
     .pricing-wrap-inner {
         max-width: 270px;
         margin: 0 auto;
-    }
-
-    .pricing-wrap-inner::before {
-        border-top-left-radius: 125px;
-        border-top-right-radius: 125px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 
     .box-news {

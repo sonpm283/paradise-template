@@ -4,6 +4,7 @@ $(document).ready(function() {
     navFixed.init();
     heroCarousel.init();
     serviceCarousel.init();
+    backToTop.init();
 });
 
 // hamburger menu 
@@ -40,6 +41,24 @@ const navFixed = {
                 navMenu.classList.add('nav-fixed');
             } else {
                 navMenu.classList.remove('nav-fixed');
+            }
+        }  
+    }
+}
+
+
+// back to top
+const backToTop = {
+    init: function () {
+        this.backToTop();
+    },
+    backToTop: function() {
+        const backToTop = document.querySelector('.back-top');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
             }
         }  
     }
