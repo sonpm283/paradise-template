@@ -417,8 +417,8 @@ section {
 
 .back-top {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 50px;
+    bottom: 50px;
     opacity: 0;
     visibility: hidden;
     transition: all .2s ease-in-out;
@@ -432,8 +432,8 @@ section {
 .back-top i {
     font-size: 3rem;
     color: var(--white-color);
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-color: var(--primary-color);
     display: grid;
     place-items: center;
