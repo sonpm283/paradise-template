@@ -28,6 +28,7 @@ const hamburgerMenu = {
     }
 }
 
+
 // scroll fixed nav 
 const navFixed = {
     init: function () {
@@ -36,33 +37,22 @@ const navFixed = {
     navFixed: function() {
         const navTop = document.querySelector('.header-top');
         const navMenu = document.querySelector('.header-main');
+        const backToTop = document.querySelector('.back-top');
         window.onscroll = function () {
             if (document.body.scrollTop > navTop.offsetHeight || document.documentElement.scrollTop > navTop.offsetHeight) {
+                backToTop.classList.add('active');
                 navMenu.classList.add('nav-fixed');
-            } else {
+            }else {
                 navMenu.classList.remove('nav-fixed');
+                backToTop.classList.remove('active');
             }
-        }  
+        }
     }
 }
 
 
 // back to top
-const backToTop = {
-    init: function () {
-        this.backToTop();
-    },
-    backToTop: function() {
-        const backToTop = document.querySelector('.back-top');
-        window.onscroll = function () {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        }  
-    }
-}
+
 
 // responsive menu
 const dropDownMenu = {
