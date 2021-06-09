@@ -288,7 +288,7 @@ section {
 
 .hamburger {
     position: relative;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: 20px;
 }
 
@@ -1059,10 +1059,10 @@ section {
     position: absolute;
     background-color: var(--white-color);
     width: 250px;
-    left: 0;
+    right: 0;
     top: 0;
     height: 100%;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all .3s linear;
     box-shadow: 0 0 7px rgba(0,0,0,.1);
     overflow: auto;
@@ -1374,6 +1374,16 @@ section {
        font-size: 12px;
     }
 
+    .back-top{
+        right: 20px;
+        bottom: 30px;
+    }
+
+    .back-top i {
+        width: 40px;
+        height: 40px;
+    }
+
     .col-1 {
         width: 8.33%;
     }
@@ -1424,5 +1434,3 @@ section {
 
 }
 
-
-/* Grid */
