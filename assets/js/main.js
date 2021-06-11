@@ -4,7 +4,6 @@ $(document).ready(function() {
     navFixed.init();
     heroCarousel.init();
     serviceCarousel.init();
-    backToTop.init();
 });
 
 // hamburger menu 
@@ -61,9 +60,10 @@ const dropDownMenu = {
         this.megaMenuMb();
     },
     subMenuChild: function () {
-        $(".menu-mb .menu-mb-item a").click(function () {
+        $(".menu-mb .menu-mb-item a").click(function (event) {
             var target = $(this).parent().children(".drop-down");
             $(target).slideToggle();
+             event.preventDefault();
         });
     },
     megaMenuMb: function () {
