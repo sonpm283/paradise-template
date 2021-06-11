@@ -4,6 +4,7 @@ $(document).ready(function() {
     navFixed.init();
     heroCarousel.init();
     serviceCarousel.init();
+    tabNews.init();
 });
 
 // hamburger menu 
@@ -74,6 +75,26 @@ const dropDownMenu = {
     },
 };
 
+const tabNews = {
+    init: function() {
+        this.tabNews();
+    },
+    tabNews: function() {
+        var tabs  = $(".tab")
+        var panes = $('.pane')
+        tabs.click(function (e) {
+            tabs.removeClass("active")
+            $(this).addClass("active")
+            panes.hide();
+            var pane = $(this).attr('data-pane');
+            console.log(pane);
+            $(pane).fadeIn(500);
+            e.preventDefault();
+        });
+
+        $("h2 a.tab:first").click();
+    }
+}
 
 // hero carousel
 const navText = ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>" ];
